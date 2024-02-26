@@ -8,6 +8,9 @@ Lab Time: @2pm
 def password_mod():
     word = input()
     password = ''
+    
+    
+
     # Type your code here.
     
     for x in word:
@@ -17,13 +20,14 @@ def password_mod():
             password += '@'
         elif x == 'm':
             password += 'M'
-        elif x == 'b':
+        elif x == 'B':
             password += '8'
         elif x == 's':
             password += '$'
         else:
-            password += x
+            password += x 
+    password += '!'
     print(password)
-    
+
 if __name__ == "__main__":
     password_mod()
